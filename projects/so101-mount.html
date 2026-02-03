@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SO-101 Jetson Orin Mount — Joshua Scott</title>
+  <meta name="description" content="Modular 3D-printed mounting system enabling untethered experimentation with onboard Jetson Orin and battery pack." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Joshua Scott</div>
+        <div class="tagline">Project</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-top:28px;">
+      <div class="kicker">Robotics · CAD · Digital Fabrication</div>
+      <h1>SO-101 Jetson Orin Mount</h1>
+      <p>
+        Designed and fabricated a modular 3D-printed mounting system that enables an SO-101 robotic arm to operate with an onboard Jetson Orin and battery pack—removing the need for a tethered laptop or external power source.
+      </p>
+      <div class="pills">
+        <div class="pill">Fusion 360</div>
+        <div class="pill">3D Printing</div>
+        <div class="pill">Modular design</div>
+        <div class="pill">Iteration</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="index.html">← Back to Projects</a>
+        <a class="button" href="../assets/pdf/portfolio.pdf" target="_blank" rel="noopener">Portfolio (PDF)</a>
+      </div>
+    </section>
+
+    <section class="grid cols-3">
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/images/so101-mount-1.jpg" alt="Mount base CAD or photo" onerror="this.remove(); this.parentElement.textContent='add image: so101-mount-1.jpg';" />
+        </div>
+        <div class="content">
+          <h3>Base component</h3>
+          <p>Interfaces with the SO-101 arm and supports the mounting structure.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/images/so101-mount-2.jpg" alt="Structural bracket CAD or photo" onerror="this.remove(); this.parentElement.textContent='add image: so101-mount-2.jpg';" />
+        </div>
+        <div class="content">
+          <h3>Structural bracket</h3>
+          <p>Secures and aligns the Jetson Orin within the system.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/images/so101-mount-3.jpg" alt="Mounting interface CAD or photo" onerror="this.remove(); this.parentElement.textContent='add image: so101-mount-3.jpg';" />
+        </div>
+        <div class="content">
+          <h3>Mounting interface</h3>
+          <p>Designed for modular assembly and iterative refinement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <div class="content prose">
+        <h2>Problem context</h2>
+        <p style="color: var(--muted); margin-top:0;">
+          Typical SO-101 configurations rely on externally connected compute hardware, which limits portability, repeatability,
+          and deployment flexibility during experimentation.
+        </p>
+
+        <h2>Design approach</h2>
+        <ul>
+          <li><strong>Modular architecture:</strong> the mount was designed as three independent components.</li>
+          <li><strong>Targeted iteration:</strong> each component is exported separately, enabling selective reprints without redesigning the entire system.</li>
+          <li><strong>Fitment-first:</strong> geometry was designed around mechanical constraints and spatial integration on the arm.</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <ul>
+          <li>Enabled an untethered configuration with onboard compute + battery pack.</li>
+          <li>Improved setup portability for testing and demonstrations.</li>
+          <li>Reduced friction for iteration by decoupling parts and reprint cycles.</li>
+        </ul>
+
+        <h2>Next iteration</h2>
+        <ul>
+          <li>Weight reduction and stiffness tuning for improved dynamics.</li>
+          <li>Cable routing and strain relief improvements.</li>
+          <li>Quick-release or standardized mounting points for faster swaps.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div><a href="index.html">← Projects</a></div>
+      <div style="font-family: var(--mono);">Last updated: <span id="d"></span></div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('d').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>

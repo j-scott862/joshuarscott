@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joshua Scott — Technical Portfolio</title>
+  <meta name="description" content="Applied builder working across robotics prototyping, digital fabrication, and local AI systems." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Joshua Scott</div>
+        <div class="tagline">Robotics · Digital Fabrication · Local AI Systems</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects/index.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Technical Portfolio</div>
+      <h1>Building practical tooling that lowers friction for experimentation.</h1>
+      <p>
+        I work across robotics prototyping, digital fabrication, and local-first AI infrastructure.
+        My focus is translating constraints into usable systems—designed for iteration, repeatability, and real-world validation.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="projects/index.html">View Projects <small>4 featured</small></a>
+        <a class="button" href="assets/pdf/portfolio.pdf" target="_blank" rel="noopener">Portfolio (PDF)</a>
+        <a class="button" href="assets/pdf/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+
+      <div class="pills" aria-label="Focus areas">
+        <div class="pill">robotics prototyping</div>
+        <div class="pill">CAD-driven iteration</div>
+        <div class="pill">3D printing operations</div>
+        <div class="pill">local LLM deployment</div>
+        <div class="pill">systems thinking</div>
+      </div>
+    </section>
+
+    <div class="section-title">Featured Work</div>
+
+    <section class="grid cols-3">
+      <a class="card" href="projects/so101-mount.html">
+        <div class="thumb">
+          <img src="assets/images/so101-mount-1.jpg" alt="SO-101 Jetson Orin mount (photo or CAD render)" onerror="this.remove(); this.parentElement.textContent='add image: so101-mount-1.jpg';" />
+        </div>
+        <div class="content">
+          <h3>SO-101 Jetson Orin Mount</h3>
+          <p>Modular 3D-printed mount enabling untethered robotics experimentation with onboard compute and power.</p>
+          <div class="meta">
+            <span class="tag">Robotics</span><span class="tag">CAD</span><span class="tag">3D Printing</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="projects/index.html#local-llm">
+        <div class="thumb">
+          <img src="assets/images/local-llm-1.jpg" alt="Local LLM deployment (terminal screenshot or diagram)" onerror="this.remove(); this.parentElement.textContent='add image: local-llm-1.jpg';" />
+        </div>
+        <div class="content">
+          <h3>Local GPT-OSS LLM Deployment</h3>
+          <p>Fully local inference stack emphasizing privacy, offline operation, and infrastructure-level control.</p>
+          <div class="meta">
+            <span class="tag">AI Systems</span><span class="tag">Linux</span><span class="tag">GPU</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="projects/index.html#training-ramp">
+        <div class="thumb">
+          <img src="assets/images/training-ramp-1.jpg" alt="Robotic training ramp (CAD render)" onerror="this.remove(); this.parentElement.textContent='add image: training-ramp-1.jpg';" />
+        </div>
+        <div class="content">
+          <h3>Training Ramp for Data Variation</h3>
+          <p>Passive geometry to introduce controlled randomness and improve dataset diversity in pick-and-place tasks.</p>
+          <div class="meta">
+            <span class="tag">Robotics</span><span class="tag">Design</span><span class="tag">Experimentation</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <div class="content prose">
+        <h2>What I optimize for</h2>
+        <ul>
+          <li><strong>Iteration speed:</strong> modular designs, targeted reprints, and reversible decisions.</li>
+          <li><strong>Repeatability:</strong> setups that reduce variability and improve experimental confidence.</li>
+          <li><strong>Constraint-aware engineering:</strong> realistic tooling that works within time, hardware, and operational limits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:16px;">
+      <div class="content prose">
+        <h2>Contact</h2>
+        <p style="color: var(--muted); margin-top: 0;">
+          Email is best for reaching me. Links below can be updated anytime.
+        </p>
+        <div class="actions">
+          <a class="button" href="mailto:joshscott862@gmail.com">Email</a>
+          <a class="button" href="#" aria-disabled="true">GitHub (add link)</a>
+          <a class="button" href="#" aria-disabled="true">LinkedIn (add link)</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Joshua Scott</div>
+      <div style="font-family: var(--mono);">Built as a static site · Hosted on GitHub Pages</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
